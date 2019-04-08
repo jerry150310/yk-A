@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/add.css">
+    <title>添加页面</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="header">
+            <span>新增地址</span>
+        </div>
+        <main class="main">
+            <input type="text" placeholder="姓名" class="name">
+            <input type="text" placeholder="手机号码" class="tel">
+            <input type="text" placeholder="固定电话（选填）">
+            <input type="text" placeholder="省市区">
+            <input type="text" placeholder="详细地址：如道路门牌号小区单元室等" class="address">
+        </main>
+        <footer class="footer">
+            <span class="done">完成</span>
+        </footer>
+    </div>
+</body>
+<script src="js/libs/require.js"></script>
+<script>
+    require(["js/main"], () => {
+        require(["add"])
+    })
+</script>
+
+</html>
